@@ -14,6 +14,7 @@ class Inbox extends MX_Controller{
     
     function read(){
         $id = $this->uri->segment(3);
+        $data['instansi']    = $this->db->get('tabel_instansi');
         $data['inbox_detail'] = $this->db->get_where('inbox',array('ID'=>$id))->row_array();
         $this->template->load('template','read',$data);
     }

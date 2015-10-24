@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/server/';
+$config['base_url'] = 'http://localhost/hackaton/';
 date_default_timezone_set('Asia/Jakarta');
 /*
 |--------------------------------------------------------------------------

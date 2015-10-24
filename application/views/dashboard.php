@@ -5,7 +5,7 @@
               <div class="info-box">
                 <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
                 <div class="info-box-content">
-                  <span class="info-box-text">CPU Traffic</span>
+                  <span class="info-box-text">ISSUE AKTIF</span>
                   <span class="info-box-number">90<small>%</small></span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
@@ -36,7 +36,7 @@
               <div class="info-box">
                 <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
                 <div class="info-box-content">
-                  <span class="info-box-text">New Members</span>
+                  <span class="info-box-text">VOLUNTEER</span>
                   <span class="info-box-number">2,000</span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->

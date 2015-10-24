@@ -14,6 +14,8 @@
                         <th>PENGIRIM</th>
                         <th>WAKTU</th>
                         <th>PESAN</th>
+                        <th>PERIORITY</th>
+                        <th>STATUS</th>
                         <th width='110'></th>
                       </tr>
                     </thead>
@@ -25,11 +27,24 @@
                         $no=1;
                         foreach ($inbox->result() as $i)
                         {
+                            $prioriti = 1;
+                            if($prioriti==1)
+                            {
+                                $color = "label label-danger";
+                            }elseif($prioriti==2)
+                            {
+                                $color="label label-succes";
+                            }else{
+                                $color="label label-info";
+                            }
                          echo "<tr>
                         <td width='10'>".$no++."</td>
                         <td>$i->SenderNumber</td>
                         <td>$i->ReceivingDateTime</td>
                         <td>$i->TextDecoded</td>
+                       
+                        <td><span class='$color'>URGENT</span></td>
+                        <td>FINISH</td>
                         <td>
                         ".anchor('inbox/read/'.$i->ID,'<i class="fa fa-eye"></i> Baca',array('class'=>'btn btn-danger btn-sm'))."
                         ".anchor('inbox/delete/'.$i->ID,'<i class="fa fa-trash-o"></i> Hapus',array('class'=>'btn btn-danger btn-sm"'))."

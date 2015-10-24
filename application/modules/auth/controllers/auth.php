@@ -7,14 +7,13 @@ class Auth extends MX_Controller{
         {
             $data = array(
                 'email'     => $this->input->post('email'),
-                'password'  => md5($this->input->post('password')),
-                'active'    =>  '1');
-            $users = $this->db->get_where('users',$data);
+                'password'  => md5($this->input->post('password')));
+            $users = $this->db->get_where('tbl_daerah',$data);
             if($users->num_rows()>0)
             {
                 $users= $users->row_array();
                 $nama = $users['nama_lengkap'];
-                $this->session->set_userdata(array('login_status'=>'oke','nama_lengkap'=>$nama));
+                $this->session->set_userdata(array('login_status'=>'oke'));
                 redirect('dashboard');
             }else{
                 redirect('auth');
@@ -24,7 +23,40 @@ class Auth extends MX_Controller{
         }
     }
     
-    function signup(){
+     function signup(){
+        if(isset($_POST['submit']))
+        {
+            //$this->load->helper('string');
+            $config['upload_path'] = './uploads/';
+            $config['allowed_types'] = 'gif|jpg|png';
+            $config['max_size']	= '100';
+            $config['max_width']  = '1024';
+            $config['max_height']  = '768';
+
+            $this->load->library('upload', $config);
+            $this->upload->do_upload();
+            $foto  = $this->upload->data(); 
+            $token = random_string('alnum', 4);
+            $account = array(
+                'nama_lengkap'      => $this->input->post('nama_lengkap'),
+                'email'             => $this->input->post('email'),
+                'password'          => md5($this->input->post('password')),
+                'no_hp'             => $this->input->post('no_hp'),
+                'no_ktp'            => $this->input->post('no_ktp'),
+                'foto'              => $foto['file_name'],
+                'biografi'          => $this->input->post('biografi')
+            );
+            $this->db->insert('tabel_volunteer',$account);
+            // send sms token
+            $pesan = "Token anda adalah ".$token;
+            sms($this->input->post('no_hp'), $pesan);
+            redirect('auth/verivy');
+        }else{
+            $this->load->view('auth/signup');
+        }
+    }
+    
+    function _signup(){
         if(isset($_POST['submit']))
         {
             $this->load->helper('string');
