@@ -1,0 +1,831 @@
+/* Proxima Nova Webfont */
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../fonts/proximanova/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova/proximanova-bold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('../fonts/proximanova/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova/proximanova-light-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova/proximanova-light-webfont.woff') format('woff'),
+         url('../fonts/proximanova/proximanova-light-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova/proximanova-light-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('../fonts/proximanova/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Color Pallete Variables */
+$navbar-color: #E40000;
+$main-dark-color: #53b6d6;
+$main-light-color: #ff0000;
+
+$navbar-default-brand-color: #fff;
+$navbar-default-link-color: #fff;
+$navbar-toggle-focus-color: rgba(255,255,255,0.25);
+
+$header-color: #000;
+
+$features-box-heading-color: rgba(27,164,196,0.7);
+
+/* Global Styling */
+
+body {
+    font-family: 'Proxima Nova Regular';
+}
+
+/* Navbar Styling */
+
+.navbar-default {
+    background-color: $navbar-color;
+    background-image: none;
+    background-repeat: no-repeat;
+
+    border: 0;
+
+    .navbar-toggle {
+        border-color: #fff;
+        margin-top: 12px;
+
+        &:hover,
+        &:focus {
+          background-color: $navbar-toggle-focus-color;
+        }
+
+        .icon-bar {
+            background-color: #fff;
+        }
+    }
+
+    .navbar-collapse {
+        border:0;
+    }
+
+    .navbar-form {
+        @extend .navbar-collapse;
+    }
+
+    .navbar-brand {
+        color: $navbar-default-link-color;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar-btn {
+        padding-left: 15px;
+        .btn-default {
+                color: #fff;
+                background-color: transparent;
+                border-color: #fff;
+                margin-top: 8px;
+            }
+    }
+
+    .navbar-nav {
+        > li > a {
+            color: $navbar-default-link-color;
+            padding-top: 20px; padding-bottom: 20px; line-height: 20px;
+            
+            &:hover,
+            &:focus {
+                color: #fff;
+                background-color: $main-light-color;
+            }
+            
+        }
+        > .active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: #fff;
+                background-color: $main-dark-color;
+            }
+        }
+    }
+ }
+
+/* Form Styling */
+/* Button Dropdown Justified Support */
+.btn-group-justified > .btn-group {
+    float: none;
+    display: table-cell;
+    width: 1%;
+}
+.btn-group-justified > .btn-group > .dropdown-menu {
+    width: 100%;
+}
+
+/* Footer Styling */
+.bottom-footer {
+    width: 100%;
+    min-height: 60px;
+    padding-top:20px;
+
+    background-color: #E40000;
+
+    .container {
+        color: #fff;
+        text-align: center;
+
+        a {
+            color: #fff;
+
+            &:hover,
+            &:focus {
+                color: #ddd;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.footer-nav {
+    text-align: center;
+    background-color: #E40000; 
+    height: 40px;
+
+    ul {
+        display: inline-block;
+
+        li {
+            float: left;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                display: block;
+                line-height: 40px; 
+                padding: 0 1.5em;
+                color: #fff;
+                text-transform: uppercase;
+
+                &:hover {
+                    background-color: #1eafd1; 
+                }
+            }
+        }
+    }
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #ff0000;
+}
+
+/* Homepage Styling */
+
+    /* Header Styling */
+
+    @mixin masthead {
+        position: relative;
+        color: #fff;
+        text-align: center;
+
+        background-color: $header-color;
+        background-image: url('../images/keluhanku-header.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding: 30px 0;
+    }
+
+    .yarumah-header {
+        @include masthead;
+
+        margin-bottom: 40px;
+        margin-top: -20px;
+
+        h1 {
+            color: #fff;
+            font-size: 40pt;
+            text-align: center;
+            font-family: 'Proxima Nova Bold';
+            text-shadow: 0px 3px 1px rgba(1, 1, 1, 0.75);
+        }
+
+        p {
+            text-align: center;
+            color: #fff;
+            text-shadow: 0px 2px 1px rgba(1, 1, 1, 0.75);
+        }
+    }
+
+    .yarumah-masthead {
+        @include masthead;
+    }
+
+    .yarumah-form {
+        a {
+            font-size: 12pt;
+            color: #fff;
+        }
+
+        .checkbox {
+            margin: 0;
+        }
+
+        .input-xl {
+            height: 56px;
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            border-radius: 6px;
+        }
+
+        .with-images {
+            padding: 9px 18px !important;
+        }
+
+        .no-radius {
+            border-radius: 0 !important;
+        }
+
+        .add-bottom-margin {
+            margin-bottom: 10px;
+        }
+
+        .btn-default {
+            border: 1px solid #888888;
+        }
+
+        .form-control {
+            @extend .btn-default;
+        }
+
+        .search-box {
+            border-left: 0;
+        }
+
+        .btn-buy {
+            font-family: 'Proxima Nova Bold';
+            margin-right: 20px;
+            border-top-left-radius: 5px !important;
+            border-bottom-left-radius: 5px !important;
+        }
+
+        .btn-maps {
+            border-left: 0;
+            min-height: 56px;
+            max-height: 56px;
+
+            img {
+                max-height: 36px;
+            }
+        }
+        .btn-xl {
+            padding: 15px 24px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            border-radius: 6px;
+        }
+        .btn-search {
+            font-family: 'Proxima Nova Bold';
+            background-color: #E40000;
+            border: 1px solid #E40000;
+        }
+
+        .btn-left {
+            text-align: left !important;
+        }
+
+        .caret-right {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .dropdown-menu-bottom {
+            left: 16px;
+        }
+
+        .no-padding {
+            padding:0;
+        }
+
+    }
+    
+    .yarumah-well {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.3);
+        min-height: 20px;
+        padding: 19px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    }
+
+    /* Homepage Main Content Styling */
+    #homepage-content {
+        h3 {
+            font-family: 'Proxima Nova Bold';
+            text-align: center;
+            line-height: 30pt;
+            padding-bottom: 20px;
+        }
+        .features {
+            .thumbnail {
+                border: 0;
+                padding: 0;
+                position: relative;
+                display: block;
+                
+                h3 {
+                    position: absolute;
+                    display: block;
+                    bottom:0px;
+                    width: 100%; 
+                    margin-top: 0;
+                    margin-bottom: 0px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    background-color: $features-box-heading-color;
+                    color: #fff;
+                }
+            }
+
+            .caption {
+                border-bottom: 10px solid transparent;
+                padding-bottom: 5px;
+                margin-bottom: 20px;   
+                transition: border-bottom 0.2s ease;
+
+                &:hover,
+                &:focus {
+                    border-bottom: 10px solid $main-light-color;
+                }
+            }
+        }
+
+        .listings {
+            .listing-images {
+                min-height: 300px;
+            }
+            .listing-items {
+                padding: 3px;
+
+                .thumbnail {
+                    border: 0;
+                    border-radius: 0;
+                    padding: 0;
+                    margin-bottom: 0;
+                    position:relative;
+                    overflow:hidden;
+
+                    .caption {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 100%;
+                        height: 100%;
+                        padding-top: 13%;
+                        padding-left: 10%;
+                        padding-right: 10%;
+                        color: #fff !important;
+                        z-index: 2;
+                        background: rgba(0, 0, 0, 0.6);
+                        
+                        a {
+                            color:#fff;
+                            font-family: 'Proxima Nova Bold';
+                            font-size: 20pt;
+                        }
+                        
+                        .listing-features {
+                            padding-right:2em;
+                        }
+                        .listing-price {
+                            font-family: 'Proxima Nova Bold';
+                        }
+                    }
+                }        
+            }
+        }
+    }
+
+/* Search Result Styling */
+.header-form-box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #b2b2b2;
+}
+
+/* Listing Details Styling */
+.breadcrumbs {
+    background-color: #fff; 
+    color: #242424;
+    height: 25px;
+    margin-top: -8px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+
+    .breadcrumbs-list {
+        padding-left: 0px;
+    }
+
+    a {
+      color: #242424;
+    }
+
+    p {
+        line-height: 40px; 
+        padding: 0 1.5em;
+    }
+}
+
+.breadcrumbs-item {
+  display: inline;
+  &:after {
+    content: ">";
+    font-size: .5em;
+    margin: 0 .5em;
+    position: relative;
+    bottom: .25em;
+  }
+
+}
+
+.breadcrumbs-item--last:after {
+  display: none;
+}
+
+
+@media only screen and (max-width: 20em) {
+  .breadcrumbs-item:after {
+    display: none;
+  }
+  .breadcrumbs-item a, .breadcrumbs-item--here {
+    position: absolute;
+    left: -999em;
+  }
+  .breadcrumbs-item--last a, .breadcrumbs-item--mid a {
+    display: block;
+    position: relative;
+    left: 0;
+    text-indent: -999em;
+  }
+  .breadcrumbs-item--last a::before, .breadcrumbs-item--mid a::before{
+    content: "< Back";
+    display: block;
+    text-indent: 0;
+    position: absolute;
+    left: 0;
+  }
+  
+}
+
+.listing-header {
+    .carousel {
+        position: relative;
+        .item {
+            width: 100%; /*slider width*/
+            max-height: 300px; /*slider height*/
+            img {
+                width: 100%; /*img width*/
+                height: 100%
+            }
+        }
+        .carousel-control {
+            background: none;
+            border: none;
+            top: 30%;
+            font-size: 50pt;
+        }
+    }
+    .description{
+        position:relative; /* absolute position (so we can position it where we want)*/
+        bottom:90px; /* position will be on bottom */
+        left:0px;
+        width:100%;
+        color:white;
+
+        .listing-features {
+            padding-right:2em;
+
+            .listing-count {
+                padding-left: 5px;
+                font-size: 10pt;
+            }
+        }
+    }
+    p.description_content{
+        font-size: 20pt;
+        text-shadow: 2px 1px rgba(0,0,0,0.5);
+    }
+
+    .heart-container {
+        position:absolute; /* absolute position (so we can position it where we want)*/
+        top:130px; /* position will be on bottom */
+        left:90%;
+        width:100%;
+        color:white;
+    }
+}
+
+.listing-content {
+    margin-top: -70px;
+    margin-bottom: 150px;
+
+    h1,h2,h3,h4,h5,h6 {
+        color: #E40000;
+        font-family: 'Proxima Nova Bold';
+    }
+}
+
+.agent-information {
+    position: relative;
+    top: -86px;
+    background-color: #E40000;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+
+    .agent-details {
+        margin-top: -50px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        p {
+            font-family: 'Proxima Nova Light';
+        }
+
+        a {
+            font-family: 'Proxima Nova Bold';
+
+        }
+    }
+
+    .agent-picture {
+        width: 75px;
+        min-height: 75px;
+        background-color: #ccc;
+        border: 3px solid #fff;
+        position: relative;
+        top:-42px;
+    }
+}
+
+.agent-contact {
+    position: relative;
+    top: -86px;
+    background-color: #cb0000;
+    padding: 40px;
+    color: #fff;
+
+    p {
+        color: #fff;
+    }
+    h4 {
+        font-family: 'Proxima Nova Bold'
+    }
+
+    .btn-contact {
+        background: none;
+        border: 1px solid #fff;
+        color: #fff;
+        font-family: 'Proxima Nova Light';
+    }
+}
+
+.agent-list-box {
+    margin-bottom: 50px;
+    h3 {
+        font-family: 'Proxima Nova Bold';
+        padding-bottom: 10px;
+    }
+    h5 {
+        font-family: 'Proxima Nova Bold';
+        a {
+            color: #E40000;
+        }
+    }
+    a {
+        color: #000;
+    }
+    .agent-picture {
+        max-width: 75px;
+        max-height: 75px;
+        background-color: #ccc;
+    }
+    .agent-list-subheading {
+        color: #000;
+        padding-bottom: 10px;
+    }
+}
+
+.latest-listing-box {
+    margin-bottom: 50px;
+    h3 {
+        font-family: 'Proxima Nova Bold';
+        padding-bottom: 10px;
+    }
+    h4 {
+        font-family: 'Proxima Nova Bold';
+        a {
+            color: #E40000;
+        }
+    }
+    a {
+        color: #000;
+    }
+    .latest-listing-picture {
+        max-width: 85px;
+        max-height: 85px;
+        background-color: #ccc;
+    }
+
+}
+
+.search-result-box {
+    line-height: 18pt;
+    .search-result-images {
+        width: 200px;
+        height: 200px;
+        margin-bottom: -15px;
+    }
+    .search-result-heading {
+        color: #E40000;
+        font-family: 'Proxima Nova Bold';
+        a {
+            color: #E40000;
+        }
+    }
+
+    .agent-contact-link-box {
+        background-color: #E40000;
+        width: 90px;
+        height: 200px;
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+        font-size: 13pt;
+        font-family: 'Proxima Nova Light';
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            background-color: #1fafd0;
+        }
+    }
+
+    .agent-contact-button {
+        padding-top: 90px;
+    }
+
+    .listing-features {
+        padding-right: 20px;
+        .listing-count {
+            font-family: 'Proxima Nova Bold';
+            font-size: 10pt;
+            padding-left: 5px;
+        }
+    }
+
+    .media-left {
+        padding-right: 15px;
+    }
+
+    .heart-button {
+        position: relative;
+        bottom: 175px;
+        left: 160px;
+        color: #fff;
+    }
+    
+    .camera-button {
+        position: relative;
+        bottom: 23px;
+        left: -33px;
+        color: #fff;
+        background: #E40000;
+        padding: 10px;
+    }
+
+
+}
+
+/* Tweet Styling */
+.media-tweet {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #fafafa;
+}
+
+/* Registration Styling */
+/* Signup Form */
+.signup-form {
+    background: rgba(8, 8, 8, 0.02);
+    box-shadow: none;
+    
+    label {
+        font-family: 'Proxima Nova Bold';
+        font-size: 15pt;
+    }
+
+    .kv-avatar .file-preview-frame,.kv-avatar .file-preview-frame:hover {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        text-align: center;
+
+    }
+    .kv-avatar .file-input {
+        max-width: 175px;
+    }
+}
+
+.heading-member-type {
+    color: #E40000;
+    font-weight: 'Proxima Nova Bold';
+    font-size: 15pt;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.full-width-tabs > ul.nav.nav-tabs {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.full-width-tabs > ul.nav.nav-tabs > li {
+    float: none;
+    display: table-cell;
+}
+.full-width-tabs > ul.nav.nav-tabs > li > a {
+    text-align: center;
+}
+
+/* Square Pagination */
+.pagination {
+    li a {
+        color: #888;
+        font-size: 14pt;
+        font-family: 'Proxima Nova Light';
+    }
+    li:first-child a,
+    li:first-child span,
+    li:last-child a, 
+    li:last-child span {
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+           border-radius: 0;
+    }
+}
+
+/* Login Form */
+/* Credit to bootsnipp.com for the css for the color graph */
+.input-login {
+    box-shadow: none;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 720px) {
+    .yarumah-header {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        margin-top: -80px;
+        text-align: left;
+        
+        p {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+    .yarumah-form {
+        .col-md-2 {
+            width: 20%;
+        }
+
+        label {
+            text-align: left !important;
+            font-size: 12pt;
+            color: #fff;
+        }
+    }
+}

@@ -14,7 +14,29 @@ class Masalah extends MX_Controller{
     function add(){
         if(isset($_POST['submit']))
         {
-            $this->db->insert('pbk_groups',array('Name'=>  $this->input->post('group')));
+            $config['upload_path'] = './assets/cover/';
+            $config['allowed_types'] = 'gif|jpg|png';
+            $config['max_size']	= '1000000000000000000000000000';
+            $config['max_width']  = '1024000000000000000';
+            $config['max_height']  = '76000800000000000000';
+
+            $this->load->library('upload', $config);
+            $this->upload->do_upload();
+            $foto  = $this->upload->data(); 
+            print_r($foto);
+            die;
+            $data = array(
+                'nama_masalah'  => $this->input->post('nama'),
+                'start_date'    => $this->input->post('mulai'),
+                'end_date'      => $this->input->post('selesai'),
+                'status'        => $this->input->post('status'),
+                'hastag'        => $this->input->post('hastag'),
+                'deskripsi'     => $this->input->post('deskripsi'),
+                'cover_image'   => $foto['file_name']);
+            
+            print_r($data);
+            die;
+            $this->db->insert('tbl_permasalahan',$data);
             redirect('group');
         }else
         {

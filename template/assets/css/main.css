@@ -1,0 +1,702 @@
+/* Proxima Nova Webfont */
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/proximanova/proximanova-bold-webfont.eot");
+  src: url("../fonts/proximanova/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-bold-webfont.woff2") format("woff2"), url("../fonts/proximanova/proximanova-bold-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-bold-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url("../fonts/proximanova/proximanova-light-webfont.eot");
+  src: url("../fonts/proximanova/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-light-webfont.woff2") format("woff2"), url("../fonts/proximanova/proximanova-light-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-light-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-light-webfont.svg#proxima_novalight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url("../fonts/proximanova/proximanova-regular-webfont.eot");
+  src: url("../fonts/proximanova/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-regular-webfont.woff2") format("woff2"), url("../fonts/proximanova/proximanova-regular-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-regular-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Color Pallete Variables */
+/* Global Styling */
+body {
+  font-family: 'Proxima Nova Regular';
+}
+
+/* Navbar Styling */
+.navbar-default {
+  background-color: #E40000;
+  background-image: none;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+  margin-top: 12px;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: 0;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.navbar-default .navbar-btn {
+  padding-left: 15px;
+}
+.navbar-default .navbar-btn .btn-default, .navbar-default .navbar-btn .yarumah-form .form-control, .yarumah-form .navbar-default .navbar-btn .form-control {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  margin-top: 8px;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #ff0000;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #53b6d6;
+}
+
+/* Form Styling */
+/* Button Dropdown Justified Support */
+.btn-group-justified > .btn-group {
+  float: none;
+  display: table-cell;
+  width: 1%;
+}
+
+.btn-group-justified > .btn-group > .dropdown-menu {
+  width: 100%;
+}
+
+/* Footer Styling */
+.bottom-footer {
+  width: 100%;
+  min-height: 60px;
+  padding-top: 20px;
+  background-color: #E40000;
+}
+.bottom-footer .container {
+  color: #fff;
+  text-align: center;
+}
+.bottom-footer .container a {
+  color: #fff;
+}
+.bottom-footer .container a:hover, .bottom-footer .container a:focus {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-nav {
+  text-align: center;
+  background-color: #E40000;
+  height: 40px;
+}
+.footer-nav ul {
+  display: inline-block;
+}
+.footer-nav ul li {
+  float: left;
+  list-style: none;
+}
+.footer-nav ul li a {
+  text-decoration: none;
+  display: block;
+  line-height: 40px;
+  padding: 0 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer-nav ul li a:hover {
+  background-color: #1eafd1;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  color: #fff;
+  background-color: #ff0000;
+}
+
+/* Homepage Styling */
+/* Header Styling */
+.yarumah-header {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  background-image: url("../images/keluhanku-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+  margin-bottom: 40px;
+  margin-top: -20px;
+}
+.yarumah-header h1 {
+  color: #fff;
+  font-size: 40pt;
+  text-align: center;
+  font-family: 'Proxima Nova Bold';
+  text-shadow: 0px 3px 1px rgba(1, 1, 1, 0.75);
+}
+.yarumah-header p {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 2px 1px rgba(1, 1, 1, 0.75);
+}
+
+.yarumah-masthead {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  background-image: url("../images/keluhanku-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+}
+
+.yarumah-form a {
+  font-size: 12pt;
+  color: #fff;
+}
+.yarumah-form .checkbox {
+  margin: 0;
+}
+.yarumah-form .input-xl {
+  height: 56px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.yarumah-form .with-images {
+  padding: 9px 18px !important;
+}
+.yarumah-form .no-radius {
+  border-radius: 0 !important;
+}
+.yarumah-form .add-bottom-margin {
+  margin-bottom: 10px;
+}
+.yarumah-form .btn-default, .yarumah-form .form-control {
+  border: 1px solid #888888;
+}
+.yarumah-form .search-box {
+  border-left: 0;
+}
+.yarumah-form .btn-buy {
+  font-family: 'Proxima Nova Bold';
+  margin-right: 20px;
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+.yarumah-form .btn-maps {
+  border-left: 0;
+  min-height: 56px;
+  max-height: 56px;
+}
+.yarumah-form .btn-maps img {
+  max-height: 36px;
+}
+.yarumah-form .btn-xl {
+  padding: 15px 24px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.yarumah-form .btn-search {
+  font-family: 'Proxima Nova Bold';
+  background-color: #E40000;
+  border: 1px solid #E40000;
+}
+.yarumah-form .btn-left {
+  text-align: left !important;
+}
+.yarumah-form .caret-right {
+  float: right;
+  margin-top: 10px;
+}
+.yarumah-form .dropdown-menu-bottom {
+  left: 16px;
+}
+.yarumah-form .no-padding {
+  padding: 0;
+}
+
+.yarumah-well {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Homepage Main Content Styling */
+#homepage-content h3 {
+  font-family: 'Proxima Nova Bold';
+  text-align: center;
+  line-height: 30pt;
+  padding-bottom: 20px;
+}
+#homepage-content .features .thumbnail {
+  border: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+}
+#homepage-content .features .thumbnail h3 {
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(27, 164, 196, 0.7);
+  color: #fff;
+}
+#homepage-content .features .caption {
+  border-bottom: 10px solid transparent;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  transition: border-bottom 0.2s ease;
+}
+#homepage-content .features .caption:hover, #homepage-content .features .caption:focus {
+  border-bottom: 10px solid #ff0000;
+}
+#homepage-content .listings .listing-images {
+  min-height: 300px;
+}
+#homepage-content .listings .listing-items {
+  padding: 3px;
+}
+#homepage-content .listings .listing-items .thumbnail {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+#homepage-content .listings .listing-items .thumbnail .caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 13%;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #fff !important;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+}
+#homepage-content .listings .listing-items .thumbnail .caption a {
+  color: #fff;
+  font-family: 'Proxima Nova Bold';
+  font-size: 20pt;
+}
+#homepage-content .listings .listing-items .thumbnail .caption .listing-features {
+  padding-right: 2em;
+}
+#homepage-content .listings .listing-items .thumbnail .caption .listing-price {
+  font-family: 'Proxima Nova Bold';
+}
+
+/* Search Result Styling */
+.header-form-box {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #b2b2b2;
+}
+
+/* Listing Details Styling */
+.breadcrumbs {
+  background-color: #fff;
+  color: #242424;
+  height: 25px;
+  margin-top: -8px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+}
+.breadcrumbs .breadcrumbs-list {
+  padding-left: 0px;
+}
+.breadcrumbs a {
+  color: #242424;
+}
+.breadcrumbs p {
+  line-height: 40px;
+  padding: 0 1.5em;
+}
+
+.breadcrumbs-item {
+  display: inline;
+}
+.breadcrumbs-item:after {
+  content: ">";
+  font-size: .5em;
+  margin: 0 .5em;
+  position: relative;
+  bottom: .25em;
+}
+
+.breadcrumbs-item--last:after {
+  display: none;
+}
+
+@media only screen and (max-width: 20em) {
+  .breadcrumbs-item:after {
+    display: none;
+  }
+
+  .breadcrumbs-item a, .breadcrumbs-item--here {
+    position: absolute;
+    left: -999em;
+  }
+
+  .breadcrumbs-item--last a, .breadcrumbs-item--mid a {
+    display: block;
+    position: relative;
+    left: 0;
+    text-indent: -999em;
+  }
+
+  .breadcrumbs-item--last a::before, .breadcrumbs-item--mid a::before {
+    content: "< Back";
+    display: block;
+    text-indent: 0;
+    position: absolute;
+    left: 0;
+  }
+}
+.listing-header .carousel {
+  position: relative;
+}
+.listing-header .carousel .item {
+  width: 100%;
+  /*slider width*/
+  max-height: 300px;
+  /*slider height*/
+}
+.listing-header .carousel .item img {
+  width: 100%;
+  /*img width*/
+  height: 100%;
+}
+.listing-header .carousel .carousel-control {
+  background: none;
+  border: none;
+  top: 30%;
+  font-size: 50pt;
+}
+.listing-header .description {
+  position: relative;
+  /* absolute position (so we can position it where we want)*/
+  bottom: 90px;
+  /* position will be on bottom */
+  left: 0px;
+  width: 100%;
+  color: white;
+}
+.listing-header .description .listing-features {
+  padding-right: 2em;
+}
+.listing-header .description .listing-features .listing-count {
+  padding-left: 5px;
+  font-size: 10pt;
+}
+.listing-header p.description_content {
+  font-size: 20pt;
+  text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+}
+.listing-header .heart-container {
+  position: absolute;
+  /* absolute position (so we can position it where we want)*/
+  top: 130px;
+  /* position will be on bottom */
+  left: 90%;
+  width: 100%;
+  color: white;
+}
+
+.listing-content {
+  margin-top: -70px;
+  margin-bottom: 150px;
+}
+.listing-content h1, .listing-content h2, .listing-content h3, .listing-content h4, .listing-content h5, .listing-content h6 {
+  color: #E40000;
+  font-family: 'Proxima Nova Bold';
+}
+
+.agent-information {
+  position: relative;
+  top: -86px;
+  background-color: #E40000;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.agent-information .agent-details {
+  margin-top: -50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.agent-information .agent-details p {
+  font-family: 'Proxima Nova Light';
+}
+.agent-information .agent-details a {
+  font-family: 'Proxima Nova Bold';
+}
+.agent-information .agent-picture {
+  width: 75px;
+  min-height: 75px;
+  background-color: #ccc;
+  border: 3px solid #fff;
+  position: relative;
+  top: -42px;
+}
+
+.agent-contact {
+  position: relative;
+  top: -86px;
+  background-color: #cb0000;
+  padding: 40px;
+  color: #fff;
+}
+.agent-contact p {
+  color: #fff;
+}
+.agent-contact h4 {
+  font-family: "Proxima Nova Bold";
+}
+.agent-contact .btn-contact {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Proxima Nova Light';
+}
+
+.agent-list-box {
+  margin-bottom: 50px;
+}
+.agent-list-box h3 {
+  font-family: 'Proxima Nova Bold';
+  padding-bottom: 10px;
+}
+.agent-list-box h5 {
+  font-family: 'Proxima Nova Bold';
+}
+.agent-list-box h5 a {
+  color: #E40000;
+}
+.agent-list-box a {
+  color: #000;
+}
+.agent-list-box .agent-picture {
+  max-width: 75px;
+  max-height: 75px;
+  background-color: #ccc;
+}
+.agent-list-box .agent-list-subheading {
+  color: #000;
+  padding-bottom: 10px;
+}
+
+.latest-listing-box {
+  margin-bottom: 50px;
+}
+.latest-listing-box h3 {
+  font-family: 'Proxima Nova Bold';
+  padding-bottom: 10px;
+}
+.latest-listing-box h4 {
+  font-family: 'Proxima Nova Bold';
+}
+.latest-listing-box h4 a {
+  color: #E40000;
+}
+.latest-listing-box a {
+  color: #000;
+}
+.latest-listing-box .latest-listing-picture {
+  max-width: 85px;
+  max-height: 85px;
+  background-color: #ccc;
+}
+
+.search-result-box {
+  line-height: 18pt;
+}
+.search-result-box .search-result-images {
+  width: 200px;
+  height: 200px;
+  margin-bottom: -15px;
+}
+.search-result-box .search-result-heading {
+  color: #E40000;
+  font-family: 'Proxima Nova Bold';
+}
+.search-result-box .search-result-heading a {
+  color: #E40000;
+}
+.search-result-box .agent-contact-link-box {
+  background-color: #E40000;
+  width: 90px;
+  height: 200px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 13pt;
+  font-family: 'Proxima Nova Light';
+  text-decoration: none;
+}
+.search-result-box .agent-contact-link-box:hover, .search-result-box .agent-contact-link-box:focus {
+  background-color: #1fafd0;
+}
+.search-result-box .agent-contact-button {
+  padding-top: 90px;
+}
+.search-result-box .listing-features {
+  padding-right: 20px;
+}
+.search-result-box .listing-features .listing-count {
+  font-family: 'Proxima Nova Bold';
+  font-size: 10pt;
+  padding-left: 5px;
+}
+.search-result-box .media-left {
+  padding-right: 15px;
+}
+.search-result-box .heart-button {
+  position: relative;
+  bottom: 175px;
+  left: 160px;
+  color: #fff;
+}
+.search-result-box .camera-button {
+  position: relative;
+  bottom: 23px;
+  left: -33px;
+  color: #fff;
+  background: #E40000;
+  padding: 10px;
+}
+
+/* Tweet Styling */
+.media-tweet {
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: #fafafa;
+}
+
+/* Registration Styling */
+/* Signup Form */
+.signup-form {
+  background: rgba(8, 8, 8, 0.02);
+  box-shadow: none;
+}
+.signup-form label {
+  font-family: 'Proxima Nova Bold';
+  font-size: 15pt;
+}
+.signup-form .kv-avatar .file-preview-frame, .signup-form .kv-avatar .file-preview-frame:hover {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+}
+.signup-form .kv-avatar .file-input {
+  max-width: 175px;
+}
+
+.heading-member-type {
+  color: #E40000;
+  font-weight: 'Proxima Nova Bold';
+  font-size: 15pt;
+}
+.heading-member-type:hover {
+  text-decoration: none;
+}
+
+.full-width-tabs > ul.nav.nav-tabs {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.full-width-tabs > ul.nav.nav-tabs > li {
+  float: none;
+  display: table-cell;
+}
+
+.full-width-tabs > ul.nav.nav-tabs > li > a {
+  text-align: center;
+}
+
+/* Square Pagination */
+.pagination li a {
+  color: #888;
+  font-size: 14pt;
+  font-family: 'Proxima Nova Light';
+}
+.pagination li:first-child a,
+.pagination li:first-child span,
+.pagination li:last-child a,
+.pagination li:last-child span {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+/* Login Form */
+/* Credit to bootsnipp.com for the css for the color graph */
+.input-login {
+  box-shadow: none;
+}
+
+/* Media Queries */
+@media screen and (min-width: 720px) {
+  .yarumah-header {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    margin-top: -80px;
+    text-align: left;
+  }
+  .yarumah-header p {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .yarumah-form .col-md-2 {
+    width: 20%;
+  }
+  .yarumah-form label {
+    text-align: left !important;
+    font-size: 12pt;
+    color: #fff;
+  }
+}

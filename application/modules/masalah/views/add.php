@@ -8,7 +8,7 @@
                 <div class="box-body">
                     <div class="box box-primary">
                         <!-- form start -->
-                        <?php echo form_open('group/edit'); ?>
+                        <?php echo form_open_multipart('masalah/add'); ?>
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Nama Issue Masalah</label>
@@ -32,7 +32,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Deskripsi</label>
-                                <textarea  name="deksipsi" class="form-control" placeholder="Tulis Deskripsi"></textarea>
+                                <textarea  name="deskripsi" class="form-control" placeholder="Tulis Deskripsi"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Hastag</label>
