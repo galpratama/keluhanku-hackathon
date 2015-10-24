@@ -4,7 +4,7 @@
           <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box">
-                <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+                <span class="info-box-icon bg-aqua"><i class="fa fa-warning"></i></span>
                 <div class="info-box-content">
                   <span class="info-box-text">ISSUE AKTIF</span>
                   <span class="info-box-number">90<small> Data</small></span>
@@ -13,10 +13,10 @@
             </div><!-- /.col -->
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box">
-                <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+                <span class="info-box-icon bg-red"><i class="fa fa-envelope"></i></span>
                 <div class="info-box-content">
-                  <span class="info-box-text">ARTIKEL</span>
-                  <span class="info-box-number">41,410</span>
+                  <span class="info-box-text">PESAN MASUK</span>
+                  <span class="info-box-number">1,123</span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
             </div><!-- /.col -->
@@ -26,19 +26,19 @@
 
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box">
-                <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
+                <span class="info-box-icon bg-green"><i class="fa fa-smile-o"></i></span>
                 <div class="info-box-content">
-                  <span class="info-box-text">VIDEO</span>
+                  <span class="info-box-text">PUAS</span>
                   <span class="info-box-number">760</span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
             </div><!-- /.col -->
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box">
-                <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+                <span class="info-box-icon bg-yellow"><i class="fa fa-frown-o"></i></span>
                 <div class="info-box-content">
-                  <span class="info-box-text">Volunteer</span>
-                  <span class="info-box-number">2,000</span>
+                  <span class="info-box-text">TIDAK PUAS</span>
+                  <span class="info-box-number">2,190</span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
             </div><!-- /.col -->
@@ -53,7 +53,7 @@
               <!-- MAP & BOX PANE -->
               <div class="box box-success">
                 <div class="box-header with-border">
-                  <h3 class="box-title">PETA PENGADUAN</h3>
+                  <h3 class="box-title">PETA PENGADUAN TERKINI</h3>
                   <div class="box-tools pull-right">
                     <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                     <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
@@ -88,41 +88,41 @@
             <div class="col-md-4">
               <!-- Info Boxes Style 2 -->
               <div class="info-box bg-yellow">
-                <span class="info-box-icon"><i class="ion ion-ios-pricetag-outline"></i></span>
+                <span class="info-box-icon"><i class="fa fa-user"></i></span>
                 <div class="info-box-content">
-                  <span class="info-box-text">MEMBER</span>
+                  <span class="info-box-text">PELAPOR</span>
                   <span class="info-box-number">5,200</span>
                   <div class="progress">
                     <div class="progress-bar" style="width: 50%"></div>
                   </div>
                   <span class="progress-description">
-                    50% Increase in 30 Days
+                    Kenaikan 50% dalam 30 Hari
                   </span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
               <div class="info-box bg-green">
-                <span class="info-box-icon"><i class="ion ion-ios-heart-outline"></i></span>
+                <span class="info-box-icon"><i class="fa fa-twitter"></i></span>
                 <div class="info-box-content">
-                  <span class="info-box-text">GROUP</span>
+                  <span class="info-box-text">KICAUAN</span>
                   <span class="info-box-number">92,050</span>
                   <div class="progress">
                     <div class="progress-bar" style="width: 20%"></div>
                   </div>
                   <span class="progress-description">
-                    20% Increase in 30 Days
+                    Kenaikan 20% dalam 30 Hari
                   </span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
               <div class="info-box bg-red">
-                <span class="info-box-icon"><i class="ion ion-ios-cloud-download-outline"></i></span>
+                <span class="info-box-icon"><i class="fa fa-check"></i></span>
                 <div class="info-box-content">
                   <span class="info-box-text">PENGADUAN SELESAI</span>
-                  <span class="info-box-number">114,381</span>
+                  <span class="info-box-number">10,281</span>
                   <div class="progress">
                     <div class="progress-bar" style="width: 70%"></div>
                   </div>
                   <span class="progress-description">
-                    70% Increase in 30 Days
+                    Kenaikan 70% dalam 30 Hari
                   </span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
@@ -130,12 +130,12 @@
                 <span class="info-box-icon"><i class="ion-ios-chatbubble-outline"></i></span>
                 <div class="info-box-content">
                   <span class="info-box-text">PENGADUAN MASUK</span>
-                  <span class="info-box-number">163,921</span>
+                  <span class="info-box-number">16,921</span>
                   <div class="progress">
                     <div class="progress-bar" style="width: 40%"></div>
                   </div>
                   <span class="progress-description">
-                    40% Increase in 30 Days
+                    Kenaikan 40% dalam 30 Hari
                   </span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->

@@ -16,6 +16,7 @@
                         <th>EMAIL</th>
                         <th>JUMLAH LAPORAN</th>
                         <TH>ALAMAT</th>
+                        <TH>AKSI</th>
                       </tr>
                     </thead>
                     <?php
@@ -32,7 +33,7 @@
                         <td>$o->no_hp</td>
                         <td>$o->email</td>
                         <td>4</td>
-                         <td>$o->alamat</td>
+                        <td>$o->alamat</td>
                         <td>
                         ".anchor('volunteer/read/'.$o->volunteer_id,'<i class="fa fa-eye"></i> BIODATA',array('class'=>'btn btn-danger btn-sm'))."
                         ". anchor('volunteer/delete/'.$o->volunteer_id,'<i class="fa fa-trash-o"></i> Hapus',array('class'=>'btn btn-danger btn-sm"'))."

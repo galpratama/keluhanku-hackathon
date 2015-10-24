@@ -36,7 +36,7 @@
                                 <textarea  name="deksipsi" class="form-control" placeholder="Masukan Nama Group"><?php echo $record['deskripsi'] ?></textarea>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Hastag</label>
+                                <label for="exampleInputPassword1">Hashtag</label>
                                 <input type="text" name="group" value="<?php echo $record['hastag'] ?>" class="form-control" placeholder="Masukan Nama Group">
                             </div>
                             <div class="form-group">

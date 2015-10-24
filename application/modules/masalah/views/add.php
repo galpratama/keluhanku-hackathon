@@ -35,7 +35,7 @@
                                 <textarea  name="deskripsi" class="form-control" placeholder="Tulis Deskripsi"></textarea>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Hastag</label>
+                                <label for="exampleInputPassword1">Hashtag</label>
                                 <input type="text" name="hastag"  class="form-control" placeholder="example : #gempaBumi">
                             </div>
                             <div class="form-group">

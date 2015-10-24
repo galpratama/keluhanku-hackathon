@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Hakcaton | SMS gatway</title>
+        <title>Keluhanku | Admin Panel</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.5 -->
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="<?php echo base_url() ?>assets/dist/css/AdminLTE.min.css">
         <!-- AdminLTE Skins. Choose a skin from the css/skins
              folder instead of downloading all of them to reduce the load. -->
-        <link rel="stylesheet" href="<?php echo base_url() ?>assets/dist/css/skins/_all-skins.min.css">
+        <link rel="stylesheet" href="<?php echo base_url() ?>assets/dist/css/skins/skin-red.min.css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,9 +36,9 @@
                 <!-- Logo -->
                 <a href="index2.html" class="logo">
                     <!-- mini logo for sidebar mini 50x50 pixels -->
-                    <span class="logo-mini"><b>A</b>LT</span>
+                    <span class="logo-mini"><b>KL</b>H</span>
                     <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg">SUMATERA SELATAN</span>
+                    <span class="logo-lg"><small>Keluhanku <b>Admin</b></small></span>
                 </a>
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top" role="navigation">
@@ -110,7 +110,7 @@
                             <img src="<?php echo base_url() ?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                         </div>
                         <div class="pull-left info">
-                            <p><?php echo $this->session->userdata('nama_lengkap'); ?></p>
+                            <p>Sumatera Selatan</p>
                             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                         </div>
                     </div>
@@ -129,37 +129,37 @@
 
                         <li>
                             <?php echo anchor('dashboard', '<i class="fa fa-laptop"></i> <span>DASHBOARD</span>
-                <small class="label pull-right bg-red">3</small>'); ?> 
+                '); ?> 
                         </li>
                         <li>
                             <?php echo anchor('masalah', '<i class="fa fa-object-ungroup"></i> <span>DAFTAR MASALAH</span>
-                <small class="label pull-right bg-red">3</small>'); ?>
+                <small class="label pull-right bg-red">6</small>'); ?>
                             </a>
                         </li>
 
                         <li>
                             <?php echo anchor('masalah/add', ' <i class="fa fa-pencil-square-o"></i><span>ENTRY ISSUE MASALAH</span>
-                <small class="label pull-right bg-red">3</small>'); ?>
+                '); ?>
                         </li>
 
 
                         <li>
                             <?php echo anchor('inbox', '<i class="fa fa-newspaper-o"></i> <span>PESAN MASUK</span>
-                <small class="label pull-right bg-red">3</small>'); ?>
+                <small class="label pull-right bg-red">9</small>'); ?>
                         </li>
 
                         <li>
                             <?php echo anchor('instansi', '<i class="fa fa-language"></i> <span>DAFTAR INSTANSI</span>
-                <small class="label pull-right bg-red">3</small>'); ?>
+                <small class="label pull-right bg-red">4</small>'); ?>
                         </li>
                         <li>
                             <?php echo anchor('volunteer', '<i class="fa fa-users"></i> <span>DAFTAR VOLUNTEER</span>
-                <small class="label pull-right bg-red">3</small>'); ?>
+                <small class="label pull-right bg-red">7</small>'); ?>
                         </li>
 
                         <li>
                             <?php echo anchor('auth/logout', '<i class="fa fa-sign-out"></i> <span>LOGOUT</span>
-                <small class="label pull-right bg-red">3</small>'); ?>
+                '); ?>
                         </li>
 
                     </ul>
@@ -172,13 +172,12 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Data Tables
-                        <small>advanced tables</small>
+                        Keluhanku
+                        <small>Admin Area</small>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li><a href="#">Tables</a></li>
-                        <li class="active">Data tables</li>
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Beranda</a></li>
+                        <li><a href="#">Admin Area</a></li>
                     </ol>
                 </section>
 
@@ -192,9 +191,9 @@
             </div><!-- /.content-wrapper -->
             <footer class="main-footer">
                 <div class="pull-right hidden-xs">
-                    <b>Version</b> 2.3.0
+                    <b>Version</b> 0.1.2
                 </div>
-                <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
+                <strong>Copyright &copy; 2015 <a href="#">BelajarKoding.net</a> and <a href="#">Belajar.PHP.net</a> Collaboration.</strong> Made with love at Hackathon Merdeka 2.0
             </footer>
 
             <!-- Add the sidebar's background. This div must be placed

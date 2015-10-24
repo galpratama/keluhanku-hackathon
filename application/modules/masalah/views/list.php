@@ -13,9 +13,10 @@
                     <thead>
                       <tr>
                         <th>NO</th>
+                        <th>NAMA MASALAH</th>
                         <th>MULAI</th>
                         <th>SELESAI</th>
-                        <th>HASTAG</th>
+                        <th>HASHTAG</th>
                         <th>STATUS</th>
                         <th width="104"></th>
                       </tr>
@@ -32,6 +33,8 @@
                         echo "
                             <tr>
                             <td width='10'>".$no++."</td>
+                            <td>$r->nama_masalah</td>
+
                             <td>".tgl_indo($r->start_date)."</td>
                             <td>".tgl_indo($r->end_date)."</td>
                             <td>$r->hastag</td>
