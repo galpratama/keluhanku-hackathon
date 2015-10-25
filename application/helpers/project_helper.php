@@ -3,7 +3,7 @@
 function is_login(){
       $CI     =   & get_instance();
       if($CI->session->userdata('login_status')==''){
-          redirect('auth');
+          redirect(base_url());
       }
 }
 

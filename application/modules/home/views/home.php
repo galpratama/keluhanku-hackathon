@@ -1,16 +1,16 @@
 <div class="yarumah-header">
     <div class="container">
-        <h1>Laporkan Keluhan di Kota-mu</h1>
-        <p>Keluhanku adalah sarana masyarakat untuk melaporkan keluhan dengan mudah.</p>
+        <h1>Laporkan Permasalahan di Kota-mu</h1>
+        <p>Keluhanku adalah sarana masyarakat untuk melaporkan permasalahan dengan mudah.</p>
         <div class="row ">
             <div class="col-md-8 col-md-offset-2 yarumah-form">
-            <form>
+           <?php echo form_open('home/search');?>
                 <div class="clearfix add-bottom-margin"></div>
                 <div class="col-md-12">
                     <div class="input-group">
-                        <input type="text" class="form-control input-xl search-box" placeholder="Cari keluhanmu : Mis: ''Kabut Asap Palembang''">
+                        <input type="text" name="keyword" class="form-control input-xl search-box" placeholder="Cari keluhanmu : Mis: ''Kabut Asap Palembang''">
                         <div class="input-group-btn">
-                            <button type="button" class="btn btn-primary btn-xl btn-search">Cari</button>
+                            <button type="submit" class="btn btn-primary btn-xl btn-search">Cari</button>
                         </div><!-- /btn-group -->
                     </div>
                 </div>

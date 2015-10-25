@@ -1,0 +1,14 @@
+{
+  "name": "vticker",
+  "homepage": "https://github.com/richhollis/vticker",
+  "_release": "a03d8fa85e",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a03d8fa85e86ed98684d3212ebd17188e56e1f83"
+  },
+  "_source": "git://github.com/richhollis/vticker.git",
+  "_target": "*",
+  "_originalSource": "richhollis/vticker",
+  "_direct": true
+}

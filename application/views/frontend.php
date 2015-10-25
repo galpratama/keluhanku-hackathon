@@ -59,7 +59,7 @@
                                 <li><a href="#"><span class="label label-danger">HOT</span> <span style="font-family: 'Proxima Nova Bold'">Kabut Asap </span> </a></li>
                             </ul>
                         </li>
-                        <li><a href="submit-issue.php">Ajukan Permasalahan</a></li>
+                        <li><?php echo anchor('home/submit_issue','Ajukan Pemasalahan');?></li>
                         <li><a href="about.php">Tentang</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -77,7 +77,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img class="img-circle" src="<?php echo base_url()?>assets/images/dummy-agent.png" alt="" style="width: 20px; vertical-align: top;">&nbsp; Galih Pratama <b class="caret"></b></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Keluar</a></li>
+                                <li><?php echo anchor('home/logout','Keluar');?></li>
                                 <li><a href="#">Ubah Password</a></li>
                             </ul>
                         </li>
@@ -123,7 +123,9 @@
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="tabPelapor">
                                 <br>
-                                <form>
+                                <?php
+                                echo form_open('home/login');
+                                ?>
                                     <div class="form-group">
                                         <label for="email">Alamat Email</label>
                                         <input type="email" name="email" class="form-control" id="email" placeholder="Email">
@@ -139,7 +141,9 @@
                             </div>
                             <div role="tabpanel" class="tab-pane" id="tabRelawan">
                                 <br>
-                                <form>
+                                           <?php
+                                echo form_open('home/login');
+                                ?>
                                     <div class="form-group">
                                         <label for="email">Alamat Email</label>
                                         <input type="email" name="email" class="form-control" id="email" placeholder="Email">

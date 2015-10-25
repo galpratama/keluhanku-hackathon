@@ -29,11 +29,13 @@
                                 <tr><td width="100">Teruskan Ke  </td><td><select name="instansi" class="form-control">
                                             <?php
                                             foreach ($instansi->result() as $i) {
-                                                echo "<option value='$i->nama_instansi'>" . strtoupper($i->nama_instansi) . "</option>";
+                                                echo "<option value='$i->no_hp'>" . strtoupper($i->nama_instansi) . "</option>";
                                             }
                                             ?>
                                         </select> </td></tr>
-                                <tr><td>Pesan  </td><td><textarea name="pesan" class="form-control input-sm" placeholder="Tulis Pesan"> 	
+                                <tr><td>Pesan  </td><td><textarea name="pesan" class="form-control input-sm">
+                                pesan dari : <?php echo $inbox_detail['SenderNumber']; ?>, 
+isi pesan : <?php echo $inbox_detail['TextDecoded']; ?>, Harap Segera Dambi, Tindakan
                                         </textarea></td></tr>
                             </table>
 
